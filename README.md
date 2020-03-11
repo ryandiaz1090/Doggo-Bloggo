@@ -1,6 +1,6 @@
 CGS 3066: Web Programming and Design
  Florida State University
-- Team Project Proposal Template -
+- Team Project Proposal  -
 
 Team Members
 	JC Tapiais
@@ -15,7 +15,7 @@ Project Title
 
 Motivation
 
-Briefly describe why you want to develop this project.
+We wanted to create a blogging platform for our dog pictures.
 
 Brief overview of what you are proposing
 Doggo Bloggo is a blogging platform targeted at dog owners.  It’s a place for them to share pictures and information about their furry companions.  
