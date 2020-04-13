@@ -35,10 +35,18 @@ button {
 button:hover {
   opacity:1;
 }
-.submitbtn, .homebtn {
-    width: auto;
-}
 
+<<<<<<< HEAD
+.cancelbtn, .homebtn {
+    padding: 14px 20px;
+    background-color: orange;
+  }
+  
+  .cancelbtn, .signupbtn, .homebtn, .submitbtn {
+    float: left;
+    width: 50%;
+  }
+=======
 .cancelbtn {
   padding: 14px 20px;
   background-color: orange;
@@ -48,6 +56,7 @@ button:hover {
   float: left;
   width: 50%;
 }
+>>>>>>> 6bdce72b185e39864d24da4f6bad03724a38a4e1
 
 .container {
   padding: 25px;
