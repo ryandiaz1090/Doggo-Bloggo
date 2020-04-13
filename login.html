@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+  <script rel="script" src="js/script.js" defer></script>
+</head>
+
+<body background = "https://thumbs.dreamstime.com/b/green-white-dog-paw-prints-tile-pattern-repeat-background-seamless-repeats-60529706.jpg">
+
+    <form class="model-content" action="/action_page.php" id="login-form">
+    <div class="container">
+      <h1>Sign In</h1>
+      <hr>
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+      <span id="error-user"></span>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <span id="error-pass"></span>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <center>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        </center>
+    </div>
+  </form>
+  
+</body>
