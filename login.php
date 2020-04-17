@@ -14,7 +14,8 @@
     <div class="container">
       <h1>Sign In</h1>
       <hr>
-
+      <!-- Display validation errors -->
+      <?php include('errors.php'); ?>
       <label for="username"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="username" required>
       <span id="error-user"></span>
@@ -28,8 +29,8 @@
       </label>
 
       <center>
-      <button type="login" class="submitbtn">Login</button>
-      <button type="button" class="homebtn"><a href="index.html">Cancel</a></button>
+      <button type="login" class="submitbtn" name="login">Login</button>
+      <button type="button" class="homebtn"><a href="register.php">Cancel</a></button>
       </center>
     </div>
     

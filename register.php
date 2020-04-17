@@ -22,7 +22,7 @@
 </center>
 
 <center>
-<button type="button" class="loginbtn" style="display:block; width:auto;"><a href="login.html">Login</a></button>
+<button type="button" class="loginbtn" style="display:block; width:auto;"><a href="login.php">Login</a></button>
 <button onclick="document.getElementById('DG').style.display='block'" style="width:auto;">Sign Up Today!</button>
 </center>
 
@@ -35,11 +35,22 @@
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
-
+      <!-- Username already taken in database -->
+      <div <?php if (isset($name_error)): ?> class="form_error" <?php endif ?> >
+	      <?php if (isset($name_error)): ?>
+	  	  <span><?php echo $name_error; ?></span>
+	      <?php endif ?>
+  	  </div>
       <label for="username"><b>Username</b></label>
       <input type="text"  name="username" value="<?php echo $username; ?>">
       <span id="error-user"></span>
 
+      <!-- Email already taken in database -->
+      <div <?php if (isset($email_error)): ?> class="form_error" <?php endif ?> >
+        <?php if (isset($email_error)): ?>
+      	<span><?php echo $email_error; ?></span>
+        <?php endif ?>
+  	  </div>
       <label for="email"><b>Email</b></label>
       <input type="text"  name="email" value="<?php echo $email; ?>">
       <span id="error-email"></span>
