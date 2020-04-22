@@ -1,0 +1,166 @@
+<!-- CGS 3066 Blog Page -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Doggo Bloggo</title>
+    <!-- Javascript Link -->
+    <script rel="script" src="js/script.js" defer></script> 
+    <!-- CSS styling-->
+    <style>
+        #header {
+            padding: 5px;
+            font-size: 20px;
+            font-family: marker felt, fantasy;
+            color: white;
+            text-align: center;
+            border: 10px double lightblue;
+            background-color: grey;
+        }
+        #form-container {
+            border: 2px solid white;
+            font-weight: bold;
+            background-color: rgba(172,216,230,0.5) ;
+            padding-left: 3px;
+        }
+        #post-container {
+            border: 2px solid white;
+            padding: 3px;
+            background-color: lightblue;
+        }
+        #survey-container {
+            text-align: center;
+            font-weight: bold;
+        }
+        #pic-container {
+            padding: 3px;
+            align-items: center;
+            margin: 25px 55px 25px 230px;
+        }
+        #caption-container {
+            font-weight: bold;
+            text-align: center;
+        }
+        h2 {
+            text-decoration: mediumseagreen underline overline wavy;
+            font-weight: bold;
+            font-family: marker felt, fantasy;
+            text-align: left;
+        }
+        .column1 {
+            display: inline-block;
+            width: 39%;
+            vertical-align: top;
+        }
+        .column2 {
+            display: inline-block;
+            width: 59%;
+            vertical-align: top;
+        }
+        .row {
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        body {
+            font-family: Arial;
+            background-image: url('https://wallpapercave.com/wp/wp4386591.jpg');   
+        }
+   </style> 
+</head>
+<body>
+    <!-- HTML -->
+    
+    <div id= "header">
+        <h1>Your Doggo Bloggo!</h1>
+    </div>
+    
+    <!-- FORM COLUMN -->
+    <div id="form-container" class="column1">
+        
+        <!-- Choose a photo from finder -->
+        <div class="row">
+            Choose your favorite photo of your dog:
+            <input type="file" id="pic" name="pic" accept="image/*" onchange="picFile(event);">
+        </div>
+        
+        <form id="blog-form" onsubmit="post();">
+            
+            <!-- Describe your dog -->
+            <div class="row">
+                <label for="dogname">What is your dogs name?</label>
+                <input id="dogname" name="dogname" type="text" />
+            </div>
+            <div class="row">
+                <label for="age"> How old is your dog?</label>
+                <input id="age" name="age" type="number"/>
+            </div>
+            <div class="row">
+                <label for="breed">What breed is your dog?</label>
+                <input id="breed" name="breed"type="text" />
+            </div>
+            <div class="row">
+                <span style="vertical-align: top;">Gender</span>
+                <div id="genders">
+                    <input type="radio" value="xx" name="gender">good girl</input>
+                    <br/>
+                    <input type="radio" value="xy" name="gender">good boy</input>
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <label for="treat"> Which is your dog's favorite treat?</label>
+                <select id="treat" name="treat">
+                    <option value="0">I do not give my dog treats</option>
+                    <option value="1">Milk-Bones</option>
+                    <option value="2">Dentastix</option>
+                    <option value="3">Sausage Links</option>
+                    <option value="4">Bacon Bits</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="trick">Which trick can your dog do best?</label>
+                <select id="trick" name="trick">
+                    <option value="0">My dog doesn't know any tricks</option>
+                    <option value="1">Sit</option>
+                    <option value="2">Stay</option>
+                    <option value="3">Roll over</option>
+                    <option value="4">Fetch</option>
+                </select>
+            </div>
+            
+            <!-- Write a caption for the photo -->
+            <div class="row">
+                <label for="caption" style="vertical-align: top;">Write a caption for you dog's photo: </label>
+                <textarea id="caption" name="caption"></textarea>                
+            </div>
+            
+            <!-- Submit entire form -->
+            <div class="row">
+                <input id="submit-btn" name="submit-btn" type="submit" value="Personalize your blog!"/>
+            </div>
+            
+        </form>
+    </div>
+    
+    <!-- BLOG POST COLUMN -->
+    <div id="post-container" class="column2">
+        
+        <!-- Survey output -->
+        <div id="survey-container" class="row">
+            Your blog is empty... Fill out the form on the left to personalize your new blog!
+        </div>
+        
+        <!-- Picture output -->
+        <div id="pic-container" class="row">
+            <img id="pic-output" width="300"/>
+        </div>
+        
+        <!-- Caption output -->
+        <div id="caption-container" class="row">
+            
+        </div>
+    </div>
+</body>
+</html>
