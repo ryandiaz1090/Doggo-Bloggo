@@ -59,12 +59,12 @@ button:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-image: url('https://thumbs.dreamstime.com/b/green-white-dog-paw-prints-tile-pattern-repeat-background-seamless-repeats-60529706.jpg');
+  background-image: url('https://wallpapercave.com/wp/wp4386591.jpg');
   padding-top: 50px;
 }
 
 .model-content {
-  background-color: gray;
+  background-color: lightblue;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
   width: 80%;
@@ -78,7 +78,7 @@ hr {
 .square{
 height: 400px;
 width: 700px;
-border-color: #666 #1c87c9;
+border-color: #666 lightblue;
 border-image: none;
 border-radius: 0 0 0 0;
 border-style: solid;
@@ -111,8 +111,10 @@ width: 100%;
 }
 
 h2 {
+  color: rgb(44, 44, 44);
   text-shadow: 2px 2px lightblue;
 }
 h3 {
+  color: rgb(44, 44, 44);
   text-shadow: 2px 2px lightblue;
 }
